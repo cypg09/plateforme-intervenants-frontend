@@ -12,12 +12,12 @@ export default function Navbar() {
         <Button
           text="Inscription"
           style="secondary"
-          href="/"
+          href="/inscription"
         />
         <Button
           text="Connexion"
           style="primary"
-          href="/"
+          href="/connexion"
         />
       </div>
     </div>
