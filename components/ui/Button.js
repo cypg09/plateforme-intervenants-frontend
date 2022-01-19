@@ -7,13 +7,14 @@ export default function Button({ text, style, href, external = false }) {
   let buttonClassName = style == "primary" ? primary : secondary;
   if (external) {
     return (
-      <a href={href} className={buttonClassName} target={"_blank"}>{text}</a>
+      <a href={href} className={buttonClassName} target={"_blank"} rel="noreferrer">{text}</a>
     );
   }
   return (
     <>
       <Link 
         href={href}
+        passHref
       >
         <button className={buttonClassName}>
           {text}

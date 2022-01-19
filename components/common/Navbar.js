@@ -7,8 +7,8 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <div className="grid sticky top-0 grid-cols-2 items-center px-5 py-0 text-center bg-white bg-opacity-95 lg:grid-cols-3">
-      <div className="w-20 text-left">
-        <Link href="/">
+      <div className="w-16 text-left">
+        <Link href="/" passHref>
           <button>
             <Image src={LogoSkemaConseil} layout="intrinsic" />
           </button>
