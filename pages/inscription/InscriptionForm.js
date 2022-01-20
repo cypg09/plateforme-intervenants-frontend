@@ -1,10 +1,11 @@
 import FormInput from "../../components/common/FormInput";
 import FormSelect from "../../components/common/FormSelect";
+import FormLayout from "../../components/ui/Form/FormLayout";
 import Submit from "../../components/ui/Form/Submit";
 
 export default function InscriptionForm() {
   return(
-    <form className="grid grid-cols-6 p-9 m-3 bg-gray-100 rounded-3xl">
+    <FormLayout>
       <div className="col-span-6 lg:col-span-3">
         <FormInput
           label="Prénom"
@@ -31,7 +32,7 @@ export default function InscriptionForm() {
           type="password"
         />
       </div>
-     <div className="col-span-3">
+    <div className="col-span-3">
         <FormSelect
           label="Campus"
           placeholder="Paris"
@@ -45,12 +46,12 @@ export default function InscriptionForm() {
           optionsValues={["L3", "M1", "M2"]}
         />
       </div>
-      <div className="col-span-2 col-start-3">
+      <div className="col-span-4 col-start-2 mt-8 md:col-start-3 md:col-span-2">
         <Submit 
           defaultText={"Je m'inscris"}
           loadingText={"Chargement..."}
         />
       </div>
-    </form>
+    </FormLayout>
   );
-}
+  }

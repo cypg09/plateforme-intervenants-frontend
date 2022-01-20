@@ -5,7 +5,7 @@ export default function Logo() {
     <Link
       href="/">
       <button 
-        className="text-3xl font-bold text-blue-900 uppercase">
+        className="text-5xl font-bold text-blue-900 uppercase">
           Skema Conseil
         </button>
     </Link>
