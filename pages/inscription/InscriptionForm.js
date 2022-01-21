@@ -32,14 +32,14 @@ export default function InscriptionForm() {
           type="password"
         />
       </div>
-    <div className="col-span-3">
+    <div className="col-span-3 lg:text-right">
         <FormSelect
           label="Campus"
           placeholder="Paris"
           optionsValues={["Paris", "Lille", "Nice", "Belo", "Raleigh"]}
         />
       </div>
-      <div className="col-span-3">
+      <div className="col-span-3 lg:text-left">
         <FormSelect
           label="Promo"
           placeholder="L3"
