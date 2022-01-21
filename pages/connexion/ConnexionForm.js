@@ -5,7 +5,7 @@ import Submit from "../../components/ui/Form/Submit";
 
 export default function ConnexionForm(){
   return(
-    <>
+    <div className="m-auto w-full lg:w-1/2">
       <FormLayout>
         <div className="col-span-6 lg:col-span-4 lg:col-start-2">
           <FormInput
@@ -27,13 +27,13 @@ export default function ConnexionForm(){
             <label for="isRH">Je suis RH</label>
           </div>
         </div>
-        <div className="col-span-4 col-start-2 mt-8 md:col-start-3 md:col-span-2">
+        <div className="col-span-6 mt-8 md:col-start-2 md:col-span-4">
           <Submit 
             defaultText={"Je me connecte"}
             loadingText={"Chargement..."}
           />
         </div>
       </FormLayout>
-    </>
+    </div>
   );
 }
