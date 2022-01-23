@@ -1,5 +1,5 @@
-import Input from "../ui/Form/Input";
-import Label from "../ui/Form/Label";
+import Input from "../../ui/Form/Input";
+import Label from "../../ui/Form/Label";
 
 export default function FormInput({ label, placeholder, type }) {
   return(

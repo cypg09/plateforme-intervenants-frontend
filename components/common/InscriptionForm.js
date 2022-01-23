@@ -1,7 +1,8 @@
-import FormInput from "../../components/common/FormInput";
-import FormSelect from "../../components/common/FormSelect";
-import FormLayout from "../../components/ui/Form/FormLayout";
-import Submit from "../../components/ui/Form/Submit";
+import FormInput from "./Form/FormInput";
+import FormSelect from "./Form/FormSelect";
+import FormLayout from "../ui/Form/FormLayout";
+import Submit from "../ui/Form/Submit";
+
 
 export default function InscriptionForm() {
   return(

@@ -1,7 +1,7 @@
-import FormCheckbox from "../../components/common/FormCheckbox";
-import FormInput from "../../components/common/FormInput";
-import FormLayout from "../../components/ui/Form/FormLayout";
-import Submit from "../../components/ui/Form/Submit";
+import FormCheckbox from "./Form/FormCheckbox";
+import FormInput from "./Form/FormInput";
+import FormLayout from "../ui/Form/FormLayout";
+import Submit from "../ui/Form/Submit";
 
 export default function ConnexionForm(){
   return(
@@ -24,7 +24,7 @@ export default function ConnexionForm(){
         <div className="col-span-6 lg:col-span-4 lg:col-start-2">
           <div className="text-center">
             <FormCheckbox label={"Je suis RH"}/>
-            <label for="isRH">Je suis RH</label>
+            <label htmlFor="isRH">Je suis RH</label>
           </div>
         </div>
         <div className="col-span-6 mt-8 md:col-start-2 md:col-span-4">

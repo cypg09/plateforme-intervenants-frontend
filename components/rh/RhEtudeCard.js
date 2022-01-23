@@ -1,5 +1,5 @@
-import CardLayout from "../../../components/ui/CardLayout";
-import Submit from "../../../components/ui/Form/Submit";
+import CardLayout from "../ui/CardLayout";
+import Submit from "../ui/Form/Submit";
 
 export default function RhEtudeCard({ incrementation, nomDuClient, type, nombreDePostulants, nombreDePostulantsPremium, dateDeSignature, remuneration }) {
   return(
@@ -21,7 +21,10 @@ export default function RhEtudeCard({ incrementation, nomDuClient, type, nombreD
         <p className="font-mono text-xl font-bold text-left text-blue-800 md:text-5xl">{ remuneration }€</p>
       </div>
       <div className="col-span-1 mt-2 md:mt-6">
-        <Submit defaultText={"Voir les postulants"} />
+        <Submit 
+          defaultText={"Voir les postulants"} 
+          loadingText={"Chargement..."}
+        />
       </div>
     </CardLayout>
   );

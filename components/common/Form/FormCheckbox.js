@@ -1,7 +1,7 @@
-export default function FormCheckbox({ placeholder, labelFor }) {
+export default function FormCheckbox({ labelFor }) {
   return(
     <>
-      <label for={labelFor}>{labelFor}</label>
+      <label htmlFor={labelFor}>{labelFor}</label>
       <input
         className="m-2"
         type="checkbox"

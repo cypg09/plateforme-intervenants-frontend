@@ -1,6 +1,5 @@
 import Logo from "../ui/Logo";
 import Button from "../ui/Button";
-import Image from "next/image";
 import LogoSkemaConseil from "../../public/logo-skema.png";
 import Link from "next/link";
 
@@ -10,7 +9,7 @@ export default function Navbar() {
       <div className="w-16 text-left">
         <Link href="/" passHref>
           <button>
-            <Image src={LogoSkemaConseil} layout="intrinsic" />
+            <img src={LogoSkemaConseil} layout="intrinsic" />
           </button>
         </Link>
       </div>

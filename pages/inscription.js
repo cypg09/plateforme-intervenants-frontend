@@ -1,5 +1,5 @@
-import H1 from "../../components/ui/H1";
-import InscriptionForm from "./InscriptionForm";
+import H1 from "../components/ui/H1";
+import InscriptionForm from "../components/common/InscriptionForm";
 
 export default function Inscription() {
   return(

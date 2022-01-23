@@ -1,6 +1,6 @@
 import PaginationButton from "./PaginationButton";
 
-export default function PaginationRH({ nombreDePagesTotal, currentPageNumber, setNewPageNumber }) {
+export default function Pagination({ nombreDePagesTotal, currentPageNumber, setNewPageNumber }) {
   console.log(nombreDePagesTotal);
   let pagination = [];
   let minSlice = Math.max(1, currentPageNumber-9);
@@ -18,7 +18,7 @@ export default function PaginationRH({ nombreDePagesTotal, currentPageNumber, se
   }
   return(
     <>
-    { pagination }
+      { pagination }
     </>
   );
 }

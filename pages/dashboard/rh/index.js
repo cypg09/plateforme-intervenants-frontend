@@ -1,5 +1,5 @@
-import BanniereProposerEtude from "./BanniereProposerEtude";
-import RhEtudeCardsGrid from "./RhEtudeCardsGrid";
+import BanniereProposerEtude from "../../../components/rh/BanniereProposerEtude";
+import RhEtudeCardsGrid from "../../../components/rh/RhEtudeCardsGrid";
 
 export default function RhDasboard() {
   return(

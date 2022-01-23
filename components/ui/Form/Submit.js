@@ -1,12 +1,12 @@
 import Router from "next/router";
-import { useState } from "react";
+import React from "react";
 
-export default function Submit({ defaultText, loadingText, onSubmit =()=>{}, style ="primary"}) {
-  const [isLoading, setIsLoading] = useState(false);
+export default function Submit({ defaultText, loadingText, onSubmit =()=>{}, btnStyle ="primary"}) {
+  const [isLoading, setIsLoading] = React.useState(false);
   let defaultClassName = "";
-  if (style === "primary") {
+  if (btnStyle === "primary") {
     defaultClassName = "px-5 py-2 m-1 text-lg text-white bg-blue-900 rounded-2xl";
-  } else if (style === "rh") {
+  } else if (btnStyle === "rh") {
     defaultClassName = "px-8 py-4 text-xl rounded-xl font-bold text-white bg-blue-900";
   }
 
@@ -21,7 +21,7 @@ export default function Submit({ defaultText, loadingText, onSubmit =()=>{}, sty
         className={defaultClassName}
         onClick={submitForm}
       >
-        {isLoading ? loadingText : defaultText}
+        <p>{isLoading ? loadingText : defaultText}</p>
       </button>
     </>
   );
