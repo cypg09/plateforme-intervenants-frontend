@@ -22,7 +22,7 @@ export default function RhEtudeCard({ incrementation, nomDuClient, type, nombreD
       </div>
       <div className="col-span-1 mt-2 md:mt-6">
         <Submit 
-          defaultText={"Voir les postulants"} 
+          defaultText={"‍Voir les postulants"} 
           loadingText={"Chargement..."}
         />
       </div>

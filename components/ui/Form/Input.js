@@ -8,7 +8,7 @@ export default function Input({ placeholder, type, value, setValue =() => {} }) 
 
   return(
     <input 
-      className="px-3 py-2 w-3/4 text-black bg-white rounded"
+      className="px-3 py-2 w-3/4 text-black bg-blue-50 rounded"
       placeholder={placeholder}
       type={type}
       defaultValue={value}

@@ -6,7 +6,7 @@ import Submit from "../ui/Form/Submit";
 
 export default function InscriptionForm() {
   return(
-    <div className="m-auto w-full lg:w-1/2">
+    <div className="m-auto w-full">
       <FormLayout>
         <div className="col-span-6 lg:col-span-3">
           <FormInput
@@ -34,17 +34,17 @@ export default function InscriptionForm() {
             type="password"
           />
         </div>
-      <div className="col-span-6 md:col-span-3 lg:text-right">
+      <div className="col-span-6 md:col-span-3">
           <FormSelect
             label="Campus"
-            placeholder="Paris"
+            defaultValue={"Ton campus"}
             optionsValues={["Paris", "Lille", "Nice", "Belo", "Raleigh"]}
           />
         </div>
-        <div className="col-span-6 md:col-span-3 lg:text-left">
+        <div className="col-span-6 md:col-span-3">
           <FormSelect
             label="Promo"
-            placeholder="L3"
+            defaultValue={"Ta promo"}
             optionsValues={["L3", "M1", "M2"]}
           />
         </div>

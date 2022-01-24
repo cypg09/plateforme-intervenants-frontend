@@ -1,17 +1,10 @@
-export default function ButtonNouvellePhase({ showPhaseForm, onClick }) {
-  let defaultClassName = "px-5 py-3 text-lg text-white bg-blue-700 rounded-xl" + " ";
-
-  const handleClick = () => {
-    onClick("test", 40);
-  }
+export default function ButtonNouvellePhase({ onClick }) {
   return(
-    <>
-      <button 
-        className={ !showPhaseForm ? defaultClassName : "hidden"}
-        onClick={handleClick}
-      >
-        { !showPhaseForm ? "Ajouter une nouvelle phase" : "Annuler la phase" }
-      </button>
-    </>
+    <button 
+      className={"inset-x-0 items-center px-5 py-3 m-auto text-lg text-white bg-blue-800 rounded-xl drop-shadow-xl"}
+      onClick={onClick}
+    >
+      Ajouter une nouvelle phase
+    </button>
   );
 }

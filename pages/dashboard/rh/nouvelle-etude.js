@@ -4,6 +4,7 @@ import BackToDashboardBanner from "../../../components/common/BackToDashboardBan
 import ButtonNouvellePhase from "../../../components/rh/nouvelle-etude/nouvelle-phase/ButtonNouvellePhase";
 import FormNouvellePhase from "../../../components/rh/nouvelle-etude/nouvelle-phase/FormNouvellePhase";
 import GridPhases from "../../../components/rh/nouvelle-etude/GridPhases";
+import ButtonValiderEtude from "../../../components/rh/nouvelle-etude/ButtonValiderEtude";
 
 export default function NouvelleEtude() {
   const [incrementation, setIncrementation] = React.useState();
@@ -14,12 +15,14 @@ export default function NouvelleEtude() {
 
   const [phases, setPhases] = React.useState([]);
 
-  const addNewPhase = (inputTypeDePhase, inputRemuneration, inputDateDeDebut, inputDescription) => {
+  const addNewPhase = (inputTypeDePhase, inputRemuneration, inputDateDeDebut, inputDateDeFin, inputCampus, inputDescription) => {
     setPhases([...phases, 
       {
         typeDePhase: inputTypeDePhase,
         remuneration: inputRemuneration,
         dateDeDebut: inputDateDeDebut,
+        dateDeFin: inputDateDeFin,
+        campus: inputCampus,
         description: inputDescription,
       }
     ]);
@@ -58,9 +61,11 @@ export default function NouvelleEtude() {
         />
         }
 
-        <div className="mt-12 mb-3">
+        <div className="mt-12 mb-3 space-x-5">
           <ButtonNouvellePhase 
-            showPhaseForm={showPhaseForm}
+            onClick={toggleShowPhaseForm}
+          />
+          <ButtonValiderEtude
             onClick={toggleShowPhaseForm}
           />
         </div>

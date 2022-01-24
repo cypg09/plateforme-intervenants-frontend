@@ -28,7 +28,7 @@ export default function FormNouvelleEtude({
 
   if (etudeIsCreated) {
     return(
-      <div className="grid grid-cols-2 px-4 py-5 m-auto my-3 w-full bg-gray-100 rounded-xl border md:grid-cols-4">
+      <div className="grid grid-cols-2 px-4 py-5 m-auto my-3 w-full bg-white rounded-xl border md:grid-cols-4">
         <p>Incrémentation : <span className="font-bold">{ incrementation }</span></p>
         <p>Nom de l'étude : <span className="font-bold uppercase">{ nomEtude }</span></p>
         <p>Date de signature : <span className="font-bold">{ dateSignature }</span></p>
@@ -41,7 +41,7 @@ export default function FormNouvelleEtude({
     );
   }
   return(
-    <div className="m-auto w-full bg-gray-100 rounded-3xl border lg:w-1/2">
+    <div className="m-auto w-full bg-white rounded-3xl border lg:w-1/2">
       <FormLayout>
         <p className="col-span-6 text-4xl font-bold">Nouvelle étude</p>
         <div className="col-span-6">

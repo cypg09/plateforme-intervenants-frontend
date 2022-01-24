@@ -9,7 +9,7 @@ export default function Select({ placeholder, optionsValues, defaultValue, setVa
   return(
     <select 
       placeholder={placeholder} 
-      className="px-9 py-2 text-center text-black bg-white rounded-lg"
+      className="px-9 py-2 text-center text-black bg-blue-50 rounded-lg"
       onChange={e => setValue(e.target.value)}
     >
       {values}

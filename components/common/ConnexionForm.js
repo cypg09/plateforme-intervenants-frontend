@@ -5,7 +5,7 @@ import Submit from "../ui/Form/Submit";
 
 export default function ConnexionForm(){
   return(
-    <div className="m-auto w-full lg:w-1/2">
+    <div className="m-auto w-full">
       <FormLayout>
         <div className="col-span-6 lg:col-span-4 lg:col-start-2">
           <FormInput

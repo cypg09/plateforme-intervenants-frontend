@@ -8,6 +8,8 @@ export default function FormNouvellePhase({ addNewPhase, toggleShowPhaseForm }) 
   const [typeDePhase, setTypeDePhase] = React.useState();
   const [remuneration, setRemuneration] = React.useState();
   const [dateDeDebut, setDateDeDebut] = React.useState();
+  const [dateDeFin, setDateDeFin] = React.useState();
+  const [campus, setCampus] = React.useState();
   const [description, setDescription] = React.useState();
 
   const handleSubmit = () => {
@@ -15,15 +17,18 @@ export default function FormNouvellePhase({ addNewPhase, toggleShowPhaseForm }) 
       typeDePhase,
       remuneration,
       dateDeDebut,
-      description
+      dateDeFin,
+      campus,
+      description,
     );
+    toggleShowPhaseForm();
   }
 
   return(
-    <div className="m-auto w-full bg-gray-100 rounded-3xl border lg:w-1/2">
+    <div className="absolute top-32 w-full h-full bg-white rounded-3xl border drop-shadow-2xl lg:h-5/6 lg:m-auto lg:inset-0 xl:h-3/4 lg:w-1/2">
       <FormLayout>
         <p className="col-span-6 text-4xl font-bold">Nouvelle phase</p>
-        <div className="col-span-6">
+        <div className="col-span-3">
           <FormSelect 
             label="Type de phase"
             optionsValues={["Documentaire", "Business Plan"]}
@@ -31,7 +36,7 @@ export default function FormNouvellePhase({ addNewPhase, toggleShowPhaseForm }) 
             setValue={setTypeDePhase}
           />
         </div>
-        <div className="col-span-6">
+        <div className="col-span-3">
           <FormInput
             label="Rémunération"
             placeholder={"250"}
@@ -42,21 +47,39 @@ export default function FormNouvellePhase({ addNewPhase, toggleShowPhaseForm }) 
         </div>
 
         <div className="col-span-6">
-          <Label label="Description de l'étude"/>
+          <Label label="Description de la phase"/>
           <textarea 
-            className="px-3 py-2 w-5/6 text-black bg-white rounded resize-y"
-            placeholder={"Entre une description complète de l'étude: livrables attendus, ..."}
+            className="px-3 py-2 pb-9 text-black bg-blue-50 rounded resize-y lg:w-5/6"
+            placeholder={"Entre une description complète de la phase: livrables attendus, ..."}
             value={description}
             onChange={e => setDescription(e.target.value)}
           />
         </div>
 
-        <div className="col-span-6">
+        <div className="col-span-3">
           <FormInput
             label="Date de début de la phase"
             type="date"
             value={dateDeDebut}
             setValue={setDateDeDebut}
+          />
+        </div>
+
+        <div className="col-span-3">
+          <FormInput
+            label="Date de fin de la phase"
+            type="date"
+            value={dateDeFin}
+            setValue={setDateDeFin}
+          />
+        </div>
+
+        <div className="col-span-6 mb-12">
+          <FormSelect 
+            label="Campus"
+            optionsValues={["Paris", "Lille", "Sofia", "Tous"]}
+            defaultValue={"Choisis le(s) campus de recrutement"}
+            setValue={setCampus}
           />
         </div>
 
