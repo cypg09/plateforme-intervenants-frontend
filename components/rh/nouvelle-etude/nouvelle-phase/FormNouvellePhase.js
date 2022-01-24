@@ -27,6 +27,8 @@ export default function FormNouvellePhase({ addNewPhase }) {
           <FormSelect 
             label="Type de phase"
             optionsValues={["Documentaire", "Business Plan"]}
+            defaultValue={"Choisis un type de phase"}
+            setValue={setTypeDePhase}
           />
         </div>
         <div className="col-span-6">

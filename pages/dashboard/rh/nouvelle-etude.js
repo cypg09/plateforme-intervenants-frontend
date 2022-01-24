@@ -48,15 +48,6 @@ export default function NouvelleEtude() {
     </>);
   }
 
-  let phasesCards = [];
-  React.useEffect(() => {
-    phases.forEach((phase) => {
-      phasesCards.push(
-        <CardNouvellePhase typeDePhase={"bp"} remuneration={100}/>
-      );
-    });
-  }, [] )
-
   return(
     <DefaultComponent>
       { etudeIsCreated && 
