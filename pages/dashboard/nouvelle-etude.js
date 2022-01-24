@@ -1,10 +1,10 @@
 import React from "react";
-import FormNouvelleEtude from "../../../components/rh/nouvelle-etude/FormNouvelleEtude";
-import BackToDashboardBanner from "../../../components/common/BackToDashboardBanner";
-import ButtonNouvellePhase from "../../../components/rh/nouvelle-etude/nouvelle-phase/ButtonNouvellePhase";
-import FormNouvellePhase from "../../../components/rh/nouvelle-etude/nouvelle-phase/FormNouvellePhase";
-import GridPhases from "../../../components/rh/nouvelle-etude/GridPhases";
-import ButtonValiderEtude from "../../../components/rh/nouvelle-etude/ButtonValiderEtude";
+import FormNouvelleEtude from "../../components/rh/nouvelle-etude/FormNouvelleEtude";
+import BackToDashboardBanner from "../../components/common/BackToDashboardBanner";
+import ButtonNouvellePhase from "../../components/rh/nouvelle-etude/nouvelle-phase/ButtonNouvellePhase";
+import FormNouvellePhase from "../../components/rh/nouvelle-etude/nouvelle-phase/FormNouvellePhase";
+import GridPhases from "../../components/rh/nouvelle-etude/GridPhases";
+import ButtonValiderEtude from "../../components/rh/nouvelle-etude/ButtonValiderEtude";
 
 export default function NouvelleEtude() {
   const [incrementation, setIncrementation] = React.useState();

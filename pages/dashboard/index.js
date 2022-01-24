@@ -1,10 +1,14 @@
 import IntervenantDashboard from "./intervenant";
-import RhDasboard from "./rh";
+import BanniereProposerEtude from "../../components/rh/dashboard/BanniereProposerEtude";
+import RhEtudeCardsGrid from "../../components/rh/dashboard/RhEtudeCardsGrid";
 
 export default function Dashboard() {
   return(
     <>
-      <RhDasboard/>
+    {/* is RH */}
+      <BanniereProposerEtude/>
+      <RhEtudeCardsGrid />
+    {/* else is intervenant */}
       <IntervenantDashboard/>
     </>
   );
