@@ -2,7 +2,6 @@ import React from "react";
 import FormNouvelleEtude from "../../../components/rh/nouvelle-etude/FormNouvelleEtude";
 import BackToDashboardBanner from "../../../components/common/BackToDashboardBanner";
 import ButtonNouvellePhase from "../../../components/rh/nouvelle-etude/nouvelle-phase/ButtonNouvellePhase";
-import CardNouvellePhase from "../../../components/rh/nouvelle-etude/nouvelle-phase/CardNouvellePhase";
 import FormNouvellePhase from "../../../components/rh/nouvelle-etude/nouvelle-phase/FormNouvellePhase";
 import GridPhases from "../../../components/rh/nouvelle-etude/GridPhases";
 
@@ -53,7 +52,9 @@ export default function NouvelleEtude() {
       { etudeIsCreated && 
       <>
         { phases.length > 0 && 
-        <GridPhases phases={phases}/>
+        <GridPhases 
+          phases={phases}
+          />
         }
 
         <div className="mt-12 mb-3">
@@ -66,6 +67,7 @@ export default function NouvelleEtude() {
           { showPhaseForm && 
             <FormNouvellePhase
               addNewPhase={addNewPhase}
+              toggleShowPhaseForm={toggleShowPhaseForm}
             />
           }
         </div>

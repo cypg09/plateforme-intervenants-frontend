@@ -7,7 +7,7 @@ export default function ButtonNouvellePhase({ showPhaseForm, onClick }) {
   return(
     <>
       <button 
-        className={ !showPhaseForm ? defaultClassName : defaultClassName + "bg-red-700"}
+        className={ !showPhaseForm ? defaultClassName : "hidden"}
         onClick={handleClick}
       >
         { !showPhaseForm ? "Ajouter une nouvelle phase" : "Annuler la phase" }

@@ -4,7 +4,7 @@ import FormSelect from "../../../common/Form/FormSelect";
 import FormLayout from "../../../ui/Form/FormLayout";
 import Label from "../../../ui/Form/Label";
 
-export default function FormNouvellePhase({ addNewPhase }) {
+export default function FormNouvellePhase({ addNewPhase, toggleShowPhaseForm }) {
   const [typeDePhase, setTypeDePhase] = React.useState();
   const [remuneration, setRemuneration] = React.useState();
   const [dateDeDebut, setDateDeDebut] = React.useState();
@@ -60,9 +60,18 @@ export default function FormNouvellePhase({ addNewPhase }) {
           />
         </div>
 
-        <div className="col-span-6">
+        <div className="col-span-3">
           <button
-            className="px-5 py-2 m-1 text-lg text-white bg-blue-900 rounded-2xl"
+            className="px-5 py-2 m-1 text-lg text-white bg-red-800 rounded-2xl"
+            onClick={toggleShowPhaseForm}
+          >
+            Annuler la phase
+          </button>
+        </div>
+
+        <div className="col-span-3">
+          <button
+            className="px-5 py-2 m-1 text-lg text-white bg-blue-800 rounded-2xl"
             onClick={handleSubmit}
           >
             Rajouter la phase
