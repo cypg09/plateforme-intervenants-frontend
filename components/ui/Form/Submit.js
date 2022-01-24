@@ -12,7 +12,8 @@ export default function Submit({ defaultText, loadingText, onSubmit =()=>{}, btn
 
   const submitForm = () => {
     setIsLoading(!isLoading);
-    onSubmit(Router.push('/dashboard'));
+    onSubmit();
+    Router.push('/dashboard');
   }
 
   return (

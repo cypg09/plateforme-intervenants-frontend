@@ -2,6 +2,7 @@ import Logo from "../ui/Logo";
 import Button from "../ui/Button";
 import LogoSkemaConseil from "../../public/logo-skema.png";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
   return (
@@ -9,22 +10,22 @@ export default function Navbar() {
       <div className="w-16 text-left">
         <Link href="/" passHref>
           <button>
-            <img src={LogoSkemaConseil} layout="intrinsic" />
+            <Image src={LogoSkemaConseil} layout="intrinsic" />
           </button>
         </Link>
       </div>
       <div className="hidden lg:inline">
         <Logo />
       </div>
-      <div className="text-right">
+      <div className="inline text-right">
         <Button
           text="Inscription"
-          style="secondary"
+          btnStyle="secondary"
           href="inscription"
         />
         <Button
           text="Connexion"
-          style="primary"
+          btnStyle="primary"
           href="connexion"
         />
       </div>

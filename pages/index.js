@@ -12,7 +12,7 @@ export default function Home() {
       <div>
         <Button 
           text="Découvre Skema Conseil"
-          type="secondary"
+          btnStyle="secondary"
           href="https://groupeskemaconseil.com"
           external={true}
           />

@@ -1,5 +1,5 @@
-import CardLayout from "../ui/CardLayout";
-import Submit from "../ui/Form/Submit";
+import CardLayout from "../../ui/CardLayout";
+import Submit from "../../ui/Form/Submit";
 
 export default function RhEtudeCard({ incrementation, nomDuClient, type, nombreDePostulants, nombreDePostulantsPremium, dateDeSignature, remuneration }) {
   return(

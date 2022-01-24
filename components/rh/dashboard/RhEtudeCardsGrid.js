@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import React from "react";
-import Pagination from "../common/Pagination/Pagination";
+import Pagination from "../../common/Pagination/Pagination";
 import RhEtudeCard from "./RhEtudeCard";
-import Loading from '../common/Loading';
+import Loading from '../../common/Loading';
 
 export default function RhEtudeCardsGrid() {
   const [hasLoaded, setHasLoaded] = React.useState(false);
