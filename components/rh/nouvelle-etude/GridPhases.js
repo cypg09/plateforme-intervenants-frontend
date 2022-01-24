@@ -1,7 +1,7 @@
 import CardNouvellePhase from "./nouvelle-phase/CardNouvellePhase";
 
 
-export default function GridPhases({ phases }) {
+export default function GridPhases({ phases, setPhases }) {
   return(
     <>
       <h1 className="mt-12 text-4xl font-bold">Les phases</h1>
@@ -14,10 +14,14 @@ export default function GridPhases({ phases }) {
           { 
             phases.map((phase) => {
               return <CardNouvellePhase 
+                key={phases.indexOf(phase)}
+                id={phases.indexOf(phase)}
                 typeDePhase={phase.typeDePhase} 
                 remuneration={phase.remuneration} 
                 dateDeDebut={phase.dateDeDebut}
                 description={phase.description}
+                phases={phases}
+                setPhases={setPhases}
                 />
               })
           }

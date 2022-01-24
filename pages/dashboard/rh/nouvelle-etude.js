@@ -54,7 +54,8 @@ export default function NouvelleEtude() {
         { phases.length > 0 && 
         <GridPhases 
           phases={phases}
-          />
+          setPhases={setPhases}
+        />
         }
 
         <div className="mt-12 mb-3">
