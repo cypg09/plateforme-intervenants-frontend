@@ -28,15 +28,13 @@ export default function FormNouvelleEtude({
 
   if (etudeIsCreated) {
     return(
-      <div className="grid grid-cols-2 px-4 py-5 m-auto my-3 w-full bg-white rounded-xl border md:grid-cols-4">
+      <div className="grid grid-cols-1 px-4 py-5 m-auto my-3 w-full bg-white rounded-xl border md:grid-cols-4">
         <p>Incrémentation : <span className="font-bold">{ incrementation }</span></p>
         <p>Nom de l'étude : <span className="font-bold uppercase">{ nomEtude }</span></p>
         <p>Date de signature : <span className="font-bold">{ dateSignature }</span></p>
-        <div className="text-right">
-          <button className="text-right text-blue-800" onClick={handleClick}>
-            Modifier
-          </button>
-        </div>
+        <button className="text-blue-800 md:text-right" onClick={handleClick}>
+          Modifier
+        </button>
       </div>
     );
   }

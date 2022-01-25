@@ -61,7 +61,7 @@ export default function NouvelleEtude() {
         />
         }
 
-        <div className="mt-12 mb-3 space-x-5">
+        <div className="grid grid-cols-1 gap-4 mt-12 mb-3 md:gap-0 md:grid-cols-2">
           <ButtonNouvellePhase 
             onClick={toggleShowPhaseForm}
           />

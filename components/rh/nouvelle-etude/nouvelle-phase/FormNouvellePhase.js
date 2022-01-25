@@ -25,10 +25,11 @@ export default function FormNouvellePhase({ addNewPhase, toggleShowPhaseForm }) 
   }
 
   return(
-    <div className="absolute top-32 w-full h-full bg-white rounded-3xl border drop-shadow-2xl lg:h-5/6 lg:m-auto lg:inset-0 xl:h-3/4 lg:w-1/2">
+    <div className="absolute inset-0 m-auto w-full h-full bg-white rounded-3xl border drop-shadow-2xl lg:inset-5 lg:h-10/12 lg:w-10/12">
+      <div className="relative">
       <FormLayout>
         <p className="col-span-6 text-4xl font-bold">Nouvelle phase</p>
-        <div className="col-span-3">
+        <div className="col-span-6 lg:col-span-3">
           <FormSelect 
             label="Type de phase"
             optionsValues={["Documentaire", "Business Plan"]}
@@ -36,7 +37,7 @@ export default function FormNouvellePhase({ addNewPhase, toggleShowPhaseForm }) 
             setValue={setTypeDePhase}
           />
         </div>
-        <div className="col-span-3">
+        <div className="col-span-6 lg:col-span-3">
           <FormInput
             label="Rémunération"
             placeholder={"250"}
@@ -56,7 +57,7 @@ export default function FormNouvellePhase({ addNewPhase, toggleShowPhaseForm }) 
           />
         </div>
 
-        <div className="col-span-3">
+        <div className="col-span-6 lg:col-span-3">
           <FormInput
             label="Date de début de la phase"
             type="date"
@@ -65,7 +66,7 @@ export default function FormNouvellePhase({ addNewPhase, toggleShowPhaseForm }) 
           />
         </div>
 
-        <div className="col-span-3">
+        <div className="col-span-6 lg:col-span-3">
           <FormInput
             label="Date de fin de la phase"
             type="date"
@@ -78,7 +79,7 @@ export default function FormNouvellePhase({ addNewPhase, toggleShowPhaseForm }) 
           <FormSelect 
             label="Campus"
             optionsValues={["Paris", "Lille", "Sofia", "Tous"]}
-            defaultValue={"Choisis le(s) campus de recrutement"}
+            defaultValue={"Campus de recrutement"}
             setValue={setCampus}
           />
         </div>
@@ -102,6 +103,7 @@ export default function FormNouvellePhase({ addNewPhase, toggleShowPhaseForm }) 
         </div>
 
       </FormLayout>
+    </div>
     </div>
   )
 }
