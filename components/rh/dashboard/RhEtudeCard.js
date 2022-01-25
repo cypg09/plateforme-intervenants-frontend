@@ -1,12 +1,19 @@
+import Button from "../../ui/Button";
 import CardLayout from "../../ui/CardLayout";
-import Submit from "../../ui/Form/Submit";
 
-export default function RhEtudeCard({ incrementation, nomDuClient, type, nombreDePostulants, nombreDePostulantsPremium, dateDeSignature, remuneration }) {
+export default function RhEtudeCard({ id, incrementation, nomDuClient, type, nombreDePostulants, nombreDePostulantsPremium, dateDeSignature, remuneration }) {
   return(
     <CardLayout>
       <h3 className="col-span-1 m-1 text-xl font-semibold text-right md:text-2xl">{ incrementation }</h3>
       <p className="col-span-1 m-1 text-xl font-semibold text-left uppercase md:text-2xl">{ nomDuClient }</p>
       <p className="col-span-2 text-lg italic md:mt-2">{ type }</p>
+      <div className="col-span-2">
+        <Button 
+          text={"Accéder à l'étude"} 
+          btnStyle={"transparent"}
+          href={`/etude/${incrementation}`}
+        />
+      </div>
       <p className="col-span-1 text-lg md:text-left md:mx-6 md:col-span-2">
         <span className="text-xl font-bold text-blue-800 md:text-6xl">{ nombreDePostulants }</span>
         {" "} postulants {" "}
@@ -21,9 +28,10 @@ export default function RhEtudeCard({ incrementation, nomDuClient, type, nombreD
         <p className="font-mono text-xl font-bold text-left text-blue-800 md:text-5xl">{ remuneration }€</p>
       </div>
       <div className="col-span-1 mt-2 md:mt-6">
-        <Submit 
-          defaultText={"‍Voir les postulants"} 
-          loadingText={"Chargement..."}
+        <Button 
+          text={"‍Voir les postulants"} 
+          btnStyle={"primary"}
+          href={`/postulants/${incrementation}`}
         />
       </div>
     </CardLayout>
