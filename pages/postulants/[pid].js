@@ -1,7 +1,9 @@
-import { useRouter } from 'next/router';
+import Postulants from "../../components/rh/postulants/Postulants";
 
-export default function PostulantsbyId() {
-  const router = useRouter();
-  const { pid } = router.query;
-  return <p>Postulants: {pid}</p>
+export default function Pid() {
+  return(
+    <>
+      <Postulants />
+    </>
+  );
 }
