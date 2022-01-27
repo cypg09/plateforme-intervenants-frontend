@@ -46,7 +46,7 @@ export default function CardPostulants() {
     <div className="grid grid-cols-4 justify-center items-center px-5 py-12 mt-8 bg-white rounded-2xl">
 
       <h1 className='col-span-3 text-4xl'>
-        <span className='text-8xl font-bold'>{ type }</span> 
+        <span className='text-7xl font-bold'>{ type }</span> 
         {" "}pour{" "}
         <span className="uppercase">{ nomDuClient }</span>
       </h1>

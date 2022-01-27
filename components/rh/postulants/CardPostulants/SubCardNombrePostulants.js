@@ -7,7 +7,7 @@ export default function SubCardNombrePostulants({ nombreDePostulants, nombreDePo
             <span className="text-5xl font-bold">{ nombreDePostulants }</span>
             {" "}postulant{nombreDePostulants > 1 ? "s" : ""}
           </span>
-          <span className="text-blue-600">
+          <span className="text-yellow-500">
             {" "} dont {" "}
             <span className="text-5xl font-bold">{ nombreDePostulantsPremium }</span>
             {" "}premium{ nombreDePostulantsPremium > 1 ? "s" : "" }
