@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function SubCardPostulant({ id, prenom, nom, email, phone, promo, campus, nombreEtudesRealisees, isPremium }){
+export default function CardPostulant({ id, prenom, nom, email, phone, promo, campus, nombreEtudesRealisees, isPremium, isValide =false}){
   const isPremiumColor = isPremium ? "bg-amber-100 " : "bg-gray-100";
 
   return(
@@ -32,6 +32,8 @@ export default function SubCardPostulant({ id, prenom, nom, email, phone, promo,
           </Link>
         </div>
 
+      { !isValide && 
+      <>
         <div className="col-span-3">
           <button className="px-5 py-2 m-1 text-white bg-green-800 rounded-2xl">
             Accepter
@@ -43,6 +45,18 @@ export default function SubCardPostulant({ id, prenom, nom, email, phone, promo,
             Refuser
           </button>
         </div>
+      </>
+      }
+
+      { isValide &&
+      <>
+        <div className="col-span-4 col-start-2">
+          <button className="px-5 py-2 m-1 text-white bg-red-800 rounded-2xl">
+            Rétrogader en postulant
+          </button>
+        </div>
+      </>
+      }
 
       </div>
     </>

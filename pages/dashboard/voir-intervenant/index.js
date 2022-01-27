@@ -1,7 +1,7 @@
 import { useRouter } from "next/router"
 import { useEffect } from "react";
 
-export default function EtudeNotFound() {
+export default function VoirIntervenant() {
   const router = useRouter();
   useEffect(() => {
     router.push('/dashboard');

@@ -31,7 +31,7 @@ export default function RhEtudeCard({ id, incrementation, nomDuClient, type, nom
         <Button 
           text={"‍Voir les postulants"} 
           btnStyle={"primary"}
-          href={`/voir-les-postulants/${incrementation}`}
+          href={`/phase/${incrementation}`}
         />
       </div>
     </CardLayout>

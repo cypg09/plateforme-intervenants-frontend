@@ -1,4 +1,4 @@
-export default function SubCardNombrePostulants({ nombreDePostulants, nombreDePostulantsPremium }) {
+export default function NombrePostulants({ nombreDePostulants, nombreDePostulantsPremium }) {
   return(
     <>
       <div className="p-5 text-black rounded-2xl">

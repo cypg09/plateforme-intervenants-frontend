@@ -1,11 +1,11 @@
 import BackToDashboardBanner from '../../common/BackToDashboardBanner';
-import CardPostulants from './CardPostulants/CardPostulants';
+import CardPhase from './CardPhase';
 
-export default function Postulants() {
+export default function Phase() {
   return(
     <>
       <BackToDashboardBanner/>
-      <CardPostulants />
+      <CardPhase />
     </>
   );
 }
