@@ -14,7 +14,7 @@ export default function CardPhase({ pid }) {
     {
       id: 1,
       prenom: "Patrick", 
-      nom: "Dumin", 
+      nom: "du Rivau", 
       promo: "L3",
       campus: "Paris",
       email: "test@skema.edu",
@@ -23,7 +23,7 @@ export default function CardPhase({ pid }) {
       isPremium: false,
     }, {
       id: 1,
-      prenom: "Patrick", 
+      prenom: "Alice", 
       nom: "Dumin", 
       promo: "L3",
       campus: "Paris",
@@ -64,15 +64,15 @@ export default function CardPhase({ pid }) {
   })
 
   return(
-    <div className="grid grid-cols-4 justify-center items-center px-5 py-12 mt-8 bg-white rounded-2xl">
+    <div className="grid grid-cols-3 justify-center items-center px-5 py-12 mx-1 mt-8 bg-white rounded-2xl">
 
-      <h1 className='col-span-3 text-4xl'>
+      <div className='col-span-full text-4xl lg:col-span-3'>
         <span className='text-7xl font-bold'>{ type }</span> 
         {" "}pour{" "}
         <span className="uppercase">{ nomDuClient }</span>
-      </h1>
+      </div>
 
-      <div>
+      <div className='col-span-full mt-9 lg:col-span-1 lg:mt-0'>
         <p className='font-mono text-6xl font-semibold text-blue-800'>{ remuneration }€</p>
         <p className='font-mono text-xl'>signée le {" "}
           <span className='text-blue-800'>
@@ -85,16 +85,16 @@ export default function CardPhase({ pid }) {
         />
       </div>
 
-      <div className='col-span-4 mt-4 ml-20 text-left'>
+      <div className='col-span-full mt-4 ml-20 text-left'>
         <h2 className='text-4xl font-bold'>Intervenants validés</h2>
       </div>
 
-      <div className='col-span-4 mb-4'/>
+      <div className='col-span-full mb-4'/>
 
       {
         intervenants.map((intervenant) => {
           return(
-            <div className='col-span-1 m-3'>
+            <div className='col-span-full m-3 lg:col-span-1'>
               <CardPostulant 
                 id={intervenant.id}
                 prenom={intervenant.prenom}
@@ -112,16 +112,16 @@ export default function CardPhase({ pid }) {
         })
       }
 
-      <div className='col-span-4 mt-4 ml-20 text-left'>
+      <div className='col-span-full mt-4 ml-20 text-left'>
         <h2 className='text-4xl font-bold'>Postulants</h2>
       </div>
 
-      <div className='col-span-4 mb-4'/>
+      <div className='col-span-full mb-4'/>
 
       {
         postulants.map((postulant) => {
           return(
-            <div className='col-span-1 m-3'>
+            <div className='col-span-full m-3 lg:col-span-1'>
               <CardPostulant 
                 id={postulant.id}
                 prenom={postulant.prenom}

@@ -78,7 +78,7 @@ export default function FormNouvellePhase({ addNewPhase, toggleShowPhaseForm }) 
         <div className="col-span-6 mb-12">
           <FormSelect 
             label="Campus"
-            optionsValues={["Paris", "Lille", "Sofia", "Tous"]}
+            optionsValues={["Paris", "Lille", "Sophia", "Tous"]}
             defaultValue={"Campus de recrutement"}
             setValue={setCampus}
           />
