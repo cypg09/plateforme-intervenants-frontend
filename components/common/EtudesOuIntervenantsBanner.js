@@ -16,7 +16,7 @@ export default function EtudesOuIntervenantsBanner({ showEtudes, setShowEtudes }
     return(
       <div className="grid grid-cols-12 mt-8">
         <div 
-          className={`col-span-2 col-start-5 rounded-l-2xl ${showEtudes ? classNameSelected : classNameNotSelected}`}
+          className={`col-start-3 col-span-4 md:col-span-2 md:col-start-5 rounded-l-2xl ${showEtudes ? classNameSelected : classNameNotSelected}`}
           onClick={setShowEtudesTrue}
         >
           <button 
@@ -26,7 +26,7 @@ export default function EtudesOuIntervenantsBanner({ showEtudes, setShowEtudes }
           </button>
         </div>
         <div 
-          className={`col-span-2 rounded-r-2xl ${showEtudes ? classNameNotSelected : classNameSelected}`}
+          className={`col-span-4 md:col-span-2 rounded-r-2xl ${showEtudes ? classNameNotSelected : classNameSelected}`}
           onClick={setShowEtudesFalse}
         >
           <button 
